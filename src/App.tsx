@@ -86,7 +86,8 @@ function App() {
 
         <ButtonHotmart
           onClick={() =>
-            gtag_report_conversion("https://pay.hotmart.com/C84476346T")
+            // gtag_report_conversion("https://pay.hotmart.com/C84476346T")
+            console.log("Teste")
           }
           className="hotmart-fb hotmart__button-checkout"
         >
@@ -110,7 +111,8 @@ function App() {
         </SectionWillBe>
         <ButtonHotmart
           onClick={() =>
-            gtag_report_conversion("https://pay.hotmart.com/C84476346T")
+            // gtag_report_conversion("https://pay.hotmart.com/C84476346T")
+            console.log("Teste")
           }
           className="hotmart-fb hotmart__button-checkout"
         >
@@ -144,7 +146,8 @@ function App() {
         </SectionMainAsks>
         <ButtonHotmart
           onClick={() =>
-            gtag_report_conversion("https://pay.hotmart.com/C84476346T")
+            // gtag_report_conversion("https://pay.hotmart.com/C84476346T")
+            console.log("Teste")
           }
           className="hotmart-fb hotmart__button-checkout"
         >

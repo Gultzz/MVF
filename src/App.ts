@@ -1,4 +1,4 @@
-import styled, {css} from "styled-components"
+import styled, {css} from "styled-components";
 import {colors} from "./utils/colors";
 
 export const Center = styled.div`
@@ -13,7 +13,7 @@ export const BackgroundContainer = styled.div`
   position: absolute;
   width: 100%;
   max-width: 100%;
-  overflow:hidden ;
+  overflow: hidden;
   top: 0;
   left: 0;
   filter: blur(40px);
@@ -21,7 +21,6 @@ export const BackgroundContainer = styled.div`
   height: 100vh;
   max-height: 900px;
   min-height: 700px;
-  
 `;
 
 export const Limit = styled.main`
@@ -48,13 +47,12 @@ export const SectionWillBe = styled.section`
   align-self: center;
   gap: 16px;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr ;
+  grid-template-columns: 1fr 1fr;
   width: 100%;
   max-width: 600px;
-  @media screen and (max-width: 650px){
+  @media screen and (max-width: 650px) {
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr ;
-    
+    grid-template-columns: 1fr;
   }
 `;
 
@@ -86,7 +84,7 @@ export const DiscoutTextStart = styled.p`
   color: #fff;
   font-size: 24px;
   text-align: right;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   @media screen and (max-width: 550px) {
     font-size: calc(24px * 0.8);
   }
@@ -99,7 +97,7 @@ export const DiscoutUser = styled.p`
   color: #fff;
   font-size: 32px;
   text-align: left;
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   line-height: 32px;
   margin-left: 16px;
   margin-top: 6px;
@@ -119,10 +117,10 @@ export const DiscoutUser = styled.p`
 
 export const DiscountName = styled.p`
   color: ${colors.yellow};
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   margin-top: 20px;
   font-size: 62px;
-margin-left: 8px;
+  margin-left: 8px;
   @media screen and (max-width: 550px) {
     font-size: calc(62px * 0.8);
     margin-left: calc(8px * 0.8);
@@ -134,7 +132,6 @@ margin-left: 8px;
     margin-top: calc(20px * 0.6);
   }
 `;
-
 
 export const ContainerColumn = styled.div`
   margin-left: 8px;
@@ -162,19 +159,19 @@ export const DiscoutPercentage = styled.p`
     font-size: calc(52px * 0.6);
     line-height: calc(52px * 0.6);
   }
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
 `;
 
 export const DiscountDownPercentage = styled.p`
   color: #fff;
-  font-family: 'Bebas Neue', sans-serif;
-    font-size: 18px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 18px;
   line-height: 10px;
   @media screen and (max-width: 550px) {
     font-size: calc(18px * 0.8);
     line-height: calc(10px * 0.8);
   }
-`
+`;
 
 export const AccordionContainer = styled.div`
   display: flex;
@@ -184,7 +181,7 @@ export const AccordionContainer = styled.div`
 
 export const AccordionHeader = styled.div`
   cursor: pointer;
-  padding: 8px 16px ;
+  padding: 8px 16px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -200,13 +197,13 @@ export const AccordionTitle = styled.p`
   text-align: left;
   font-weight: 600;
   color: #fff;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 15px;
 `;
 
 export const Arrow = styled.img<any>`
   width: 18px;
-  transform: rotate(${({top}) => top ? '180deg' : '0'});
+  transform: rotate(${({top}) => (top ? "180deg" : "0")});
   transition: 0.4s;
   align-self: center;
   justify-self: center;
@@ -221,19 +218,20 @@ export const AccordionDescription = styled.p`
   text-align: left;
   font-weight: 400;
   color: #fff;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 14px;
 `;
 
 export const AccordionBody = styled.div<any>`
   padding: 0 16px;
-  max-height: ${({open}: {open: boolean}) => !open ? "0px" : '800px'};
+  max-height: ${({open}: {open: boolean}) => (!open ? "0px" : "800px")};
   transition: ease-in-out 0.6s;
   overflow: hidden;
   display: flex;
   width: 100%;
   background-color: ${colors.mediumGray};
-  border-bottom: ${({open}: {open: boolean}) => open ? `1px solid ${colors.black}` : 'none'};
+  border-bottom: ${({open}: {open: boolean}) =>
+    open ? `1px solid ${colors.black}` : "none"};
   border-top: 1px solid ${colors.black};
 `;
 
@@ -253,37 +251,51 @@ export const BigNumber = styled.p`
   left: -15px;
   color: ${colors.yellow};
   text-shadow: 1px 1px 4px #0008;
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 70px;
 `;
 
-
-export const Circles = styled.div<{ size: number; color: string; top?: number; left?: number; right?: number; bottom?: number; }>`
+export const Circles = styled.div<{
+  size: number;
+  color: string;
+  top?: number;
+  left?: number;
+  right?: number;
+  bottom?: number;
+}>`
   width: ${({size}: {size: number}) => size}px;
-  height: ${({size} : {size: number}) => size}px;
-  background-color: ${({color} : {color: string}) => color};
+  height: ${({size}: {size: number}) => size}px;
+  background-color: ${({color}: {color: string}) => color};
   border-radius: 999999px;
   position: absolute;
-  ${({top}: {top?: number}) => (top && top > 0) &&
-  css`
-    top: ${top}px;
-  `};
-  ${({bottom} : {bottom?: number}) => bottom && bottom > 0 &&
-  css`
-    bottom: ${bottom}px;
-  `};
-  
-  ${({left} : {left?: number}) => left && left > 0 &&
-  css`
-    left: ${left}px;
-  `};
-  ${({right} : {right?: number}) => right && right > 0 &&
-  css`
-    right: ${right}px;
-  `};
+  ${({top}: {top?: number}) =>
+    top &&
+    top > 0 &&
+    css`
+      top: ${top}px;
+    `};
+  ${({bottom}: {bottom?: number}) =>
+    bottom &&
+    bottom > 0 &&
+    css`
+      bottom: ${bottom}px;
+    `};
+
+  ${({left}: {left?: number}) =>
+    left &&
+    left > 0 &&
+    css`
+      left: ${left}px;
+    `};
+  ${({right}: {right?: number}) =>
+    right &&
+    right > 0 &&
+    css`
+      right: ${right}px;
+    `};
   @media screen and (max-width: 800px) {
     width: ${({size}: {size: number}) => size * 0.7}px;
-    height: ${({size} : {size: number}) => size * 0.7}px;
+    height: ${({size}: {size: number}) => size * 0.7}px;
   }
 `;
 
@@ -292,9 +304,8 @@ export const Icon = styled.img`
   align-self: center;
 `;
 
-
 export const Yellow = styled.span`
-  color: ${colors.yellow} ;
+  color: ${colors.yellow};
   text-decoration: underline;
 `;
 
@@ -308,7 +319,7 @@ export const Title = styled.h1`
   align-self: center;
   margin-top: 64px;
   color: #fff;
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 36px;
   max-width: 620px;
   @media screen and (max-width: 650px) {
@@ -322,7 +333,7 @@ export const TopicTitle = styled.p`
   text-align: left;
   margin-left: 8px;
   color: ${colors.black};
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 20px;
 `;
 
@@ -332,7 +343,7 @@ export const TopicDescription = styled.p`
   align-self: center;
   color: ${colors.black};
   margin-left: 8px;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 15px;
 `;
 
@@ -342,7 +353,7 @@ export const Subtitle = styled.h2`
   align-self: center;
   margin-top: 32px;
   color: #fff;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-weight: 400;
   font-size: 20px;
   max-width: 615px;
@@ -375,13 +386,13 @@ export const ButtonText = styled.p`
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 24px;
 `;
 
 export const SectionTitle = styled.h2`
   color: #fff;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 18px;
   margin-top: 64px;
 `;
@@ -389,13 +400,13 @@ export const SectionTitle = styled.h2`
 export const SectionSubtitle = styled.h2`
   margin-top: 20px;
   text-align: center;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 15px;
   font-weight: 500;
   color: ${colors.lightGray};
 `;
 
-export const ButtonHotmart = styled.a`
+export const ButtonHotmart = styled.button`
   margin-top: 64px;
   background: #00000000;
   border: none;
@@ -404,11 +415,11 @@ export const ButtonHotmart = styled.a`
   align-self: center;
   width: 100%;
   border-radius: 999px;
-`
+`;
 
 export const ExternalUrl = styled.a`
   color: ${colors.mediumGray};
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-weight: 500;
   font-size: 13px;
   margin-top: 6px;
@@ -424,14 +435,13 @@ export const SafeBuy = styled.img`
   align-self: center;
 `;
 
-
 export const FooterTitle = styled.div`
   color: #fff;
   text-align: center;
   align-items: center;
   font-weight: 600;
   font-size: 15px;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
 `;
 
 export const FooterLimit = styled.main`
@@ -451,5 +461,5 @@ export const FooterText = styled.div`
   max-width: 600px;
   font-size: 15px;
   font-weight: 400;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
 `;

@@ -48,7 +48,6 @@ import safeBuy from "./assets/safe-buy.svg";
 import arrow from "./assets/arrow.svg";
 import {asks, topics} from "./utils/mocks";
 import {useState} from "react";
-import "https://www.googletagmanager.com/gtag/js?id=G-0G452PW0CH";
 
 function App() {
   const [opened, setOpened] = useState<string>("");
@@ -85,10 +84,10 @@ function App() {
         </Subtitle>
 
         <ButtonHotmart
-          onClick={() =>
-            gtag_report_conversion("https://pay.hotmart.com/C84476346T")
-          }
-          className="hotmart-fb hotmart__button-checkout"
+          onClick={() => {
+            window.location.href = "https://pay.hotmart.com/C84476346T";
+          }}
+          // className="hotmart-fb hotmart__button-checkout"
         >
           <ButtonContainer>
             <Button>
@@ -109,10 +108,10 @@ function App() {
           ))}
         </SectionWillBe>
         <ButtonHotmart
-          onClick={() =>
-            gtag_report_conversion("https://pay.hotmart.com/C84476346T")
-          }
-          className="hotmart-fb hotmart__button-checkout"
+          onClick={() => {
+            window.location.href = "https://pay.hotmart.com/C84476346T";
+          }}
+          // className="hotmart-fb hotmart__button-checkout"
         >
           <ButtonContainer>
             <Button>
@@ -143,10 +142,10 @@ function App() {
           ))}
         </SectionMainAsks>
         <ButtonHotmart
-          onClick={() =>
-            gtag_report_conversion("https://pay.hotmart.com/C84476346T")
-          }
-          className="hotmart-fb hotmart__button-checkout"
+          onClick={() => {
+            window.location.href = "https://pay.hotmart.com/C84476346T";
+          }}
+          // className="hotmart-fb hotmart__button-checkout"
         >
           <ButtonContainer>
             <Button>

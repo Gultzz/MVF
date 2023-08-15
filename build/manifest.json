@@ -1,0 +1,13 @@
+{
+  "short_name": "Melhor você focar",
+  "name": "Melhor você focar",
+  "icons": [
+    {
+      "src": "logo.svg"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#131212",
+  "background_color": "#131212"
+}
